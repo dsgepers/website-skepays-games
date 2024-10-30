@@ -19,7 +19,8 @@ layout: default
 				{%- for _post in _posts -%}
 					{% assign remainder = forloop.index0 | modulo: 3 %}
 					{%- if remainder == col_i -%}
-						{%- include gameblock.html title=_post.title url=_post.url image=_post.image_url -%}
+						{%- capture _link -%} {{- _post.url | absolute_url -}} {%- endcapture -%}
+						{%- include gameblock.html title=_post.title url=_link image=_post.image_url -%}
 					{%- endif -%}			
 				{%- endfor -%}
 				</div>
