@@ -1,7 +1,7 @@
 --
 title: See the games
 subtitle: A list of games I've made
-layout: "page"
+layout: page
 icon: fa-gamepad
 order: 3
 ---
