@@ -1,16 +1,10 @@
 ---
-title: Third Game
-author: Chris
+title: Monsters and Mayhem
+author: Skepays
 layout: post
-icon: fa-lightbulb
-icon-style: regular
-image_url: assets/images/pic02.jpg
+image_url: assets/images/pic04.jpg
 ---
-See the icon?
-
 Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
-
-<span class="image left"><img src="{{ 'assets/images/pic03.jpg' | relative_url }}" alt="" /></span>
 
 Pri id consul meliore luptatum, vix iudico impetus salutatus eu, duo at causae admodum complectitur. Qui eu salutandi dignissim, ea dictas audire commodo eos, vim cu autem dicam. Novum placerat moderatius sea ex, debet labitur reprehendunt mei ad. Tempor theophrastus et est, id tollit ponderum usu, at vis consul detraxit. Sit ut adhuc aeque.
 
