@@ -11,23 +11,17 @@ layout: default
 		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
 	{%- endif -%}
 	<!-- Posts List -->
-	{%- for _post in _posts -%}
-		{%- capture _title -%}
-			<div class="4u 12u$(mobile)">
-			  <div class="item">
-			    <a href="{{- _post.url | absolute_url -}}" class="image fit"><img src="{{ 'assets/images/pic02.jpg' | relative_url }}" alt="{{- _post.title -}}" /></a>
-			    <header>
-			      <h3>{{- _post.title -}}</h3>
-			    </header>
-			  </div>
-			  <div class="item">
-			    <a href="{{- _post.url | absolute_url -}}" class="image fit"><img src="{{ 'assets/images/pic03.jpg' | relative_url }}" alt="{{- _post.title -}}" /></a>
-			    <header>
-			      <h3>{{- _post.title -}}</h3>
-			    </header>
-			  </div>
-			</div>
-		{%- endcapture -%}
+	{%- for col_i in (0..2) -%}
+		<div class="4u 12u$(mobile)">
+		{%- for _post in _posts -%}
+			{%- if forloop.index | modulo:2 == 0 -%}
+				{%- include gameblock.html title=_post.title url=_post.url -%}
+			{%- endif -%}
+
+			
+		{%- endfor -%}
+		</div>
 	{%- endfor -%}
+	
 	</div>
 </div>
