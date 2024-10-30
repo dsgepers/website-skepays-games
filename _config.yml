@@ -65,5 +65,6 @@ remote_theme: dsgepers/website-skepays-games
 collections: 
   sections:
     output: true
+    permalink: date
   games:
     output: true
