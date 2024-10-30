@@ -6,27 +6,6 @@ layout: default
 <!-- Main -->
 <div id="main">
 
-
-	<div class="row">
-		<div class="4u 12u$(mobile)">
-		  <div class="item">
-		    <a href="#" class="image fit"><img src="{{ 'assets/images/pic02.jpg' | relative_url }}" alt="Ipsum Feugiat" /></a>
-		    <header>
-		      <h3>Ipsum Feugiat</h3>
-		    </header>
-		  </div>
-		  <div class="item">
-		    <a href="#" class="image fit"><img src="{{ 'assets/images/pic03.jpg' | relative_url }}" alt="Rhoncus Semper" /></a>
-		    <header>
-		      <h3>Rhoncus Semper</h3>
-		    </header>
-		  </div>
-		</div>
-	</div>
-
-
-
-
 	<div class="row">
 	{%- if page.content != "" -%}
 		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
@@ -36,13 +15,13 @@ layout: default
 		{%- capture _title -%}
 			<div class="4u 12u$(mobile)">
 			  <div class="item">
-			    <a href="{{- _post.url | absolute_url -}}" class="image fit"><img src="{{ 'assets/images/pic02.jpg' | relative_url }}" alt="Ipsum Feugiat" /></a>
+			    <a href="{{- _post.url | absolute_url -}}" class="image fit"><img src="{{ 'assets/images/pic02.jpg' | relative_url }}" alt="{{- _post.title -}}" /></a>
 			    <header>
 			      <h3>{{- _post.title -}}</h3>
 			    </header>
 			  </div>
 			  <div class="item">
-			    <a href="{{- _post.url | absolute_url -}}" class="image fit"><img src="{{ 'assets/images/pic03.jpg' | relative_url }}" alt="Rhoncus Semper" /></a>
+			    <a href="{{- _post.url | absolute_url -}}" class="image fit"><img src="{{ 'assets/images/pic03.jpg' | relative_url }}" alt="{{- _post.title -}}" /></a>
 			    <header>
 			      <h3>{{- _post.title -}}</h3>
 			    </header>
