@@ -1,6 +1,5 @@
 ---
-title: Monsters and Mayhem
-author: Skepays
+title: Zoey's Kids Playtime
 layout: post
 image_url: assets/images/pic04.jpg
 ---
