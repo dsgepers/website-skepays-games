@@ -1,5 +1,5 @@
 ---
-title: Second Post
+title: Second Game
 author: Chris
 layout: post
 image_url: assets/images/pic02.jpg

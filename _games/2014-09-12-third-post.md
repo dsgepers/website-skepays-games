@@ -1,5 +1,5 @@
 ---
-title: Third Post
+title: Third Game
 author: Chris
 layout: post
 icon: fa-lightbulb

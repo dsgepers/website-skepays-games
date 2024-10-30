@@ -1,5 +1,5 @@
 ---
-title: First Post
+title: First Game
 author: Chris
 layout: post
 image_url: assets/images/pic02.jpg
