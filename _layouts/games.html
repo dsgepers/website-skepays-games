@@ -6,21 +6,23 @@ layout: default
 <!-- Main -->
 <div id="main">
 
-	<div class="row">
-	{%- if page.content != "" -%}
-		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
-	{%- endif -%}
-	<!-- Posts List -->
-	{%- for col_i in (0..2) -%}
-		<div class="4u 12u$(mobile)">
-		{%- for _post in _posts -%}
-			{% assign remainder = forloop.index0 | modulo: 3 %}
-			{%- if remainder == col_i -%}
-				{%- include gameblock.html title=_post.title url=_post.url image=_post.image_url -%}
-			{%- endif -%}			
+	<section>
+		<div class="row">
+		{%- if page.content != "" -%}
+			{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
+		{%- endif -%}
+		<!-- Posts List -->
+		{%- for col_i in (0..2) -%}
+			<div class="4u 12u$(mobile)">
+			{%- for _post in _posts -%}
+				{% assign remainder = forloop.index0 | modulo: 3 %}
+				{%- if remainder == col_i -%}
+					{%- include gameblock.html title=_post.title url=_post.url image=_post.image_url -%}
+				{%- endif -%}			
+			{%- endfor -%}
+			</div>
 		{%- endfor -%}
+		
 		</div>
-	{%- endfor -%}
-	
-	</div>
+	</section>
 </div>
