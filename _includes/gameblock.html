@@ -6,10 +6,11 @@
 
 {%- assign _title = include.title | default: 'Untitled' -%}
 {%- assign _url = include.url | default: '#' -%}
+{%- assign _image_url = include.image | default: '#' -%}
 
 
 <div class="item">
-  <a href="{{- _url -}}" class="image fit"><img src="{{ 'assets/images/pic02.jpg' | relative_url }}" alt="{{- _title -}}" /></a>
+  <a href="{{- _url -}}" class="image fit"><img src="{{ _image_url | relative_url }}" alt="{{- _title -}}" /></a>
   <header>
     <h3>{{- _title -}}</h3>
   </header>
