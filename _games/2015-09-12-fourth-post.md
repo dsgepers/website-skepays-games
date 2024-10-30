@@ -1,8 +1,8 @@
 ---
-title: Fourth Post
+title: Fourth Game
 author: Chris
 layout: post
-image_url: assets/images/pic02.jpg
+image_url: assets/images/pic04.jpg
 ---
 Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
 
