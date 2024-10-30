@@ -70,3 +70,6 @@ collections:
     output: false
   games:
     output: true
+  legaldocs:
+    output: true
+    permalink: "/legal-documents/:categories/:title:output_ext"
