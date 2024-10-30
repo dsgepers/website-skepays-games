@@ -1,7 +1,6 @@
 ---
 title: Zoey's Kids Playtime - Privacy Policy
 layout: post
-image_url: assets/images/pic04.jpg
 ---
 Last updated: October 30, 2024
 
