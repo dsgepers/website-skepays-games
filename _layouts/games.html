@@ -14,11 +14,9 @@ layout: default
 	{%- for col_i in (0..2) -%}
 		<div class="4u 12u$(mobile)">
 		{%- for _post in _posts -%}
-			{%- if forloop.index | modulo:2 == 0 -%}
+			{%- if forloop.index0 | modulo:3 == col_i -%}
 				{%- include gameblock.html title=_post.title url=_post.url -%}
-			{%- endif -%}
-
-			
+			{%- endif -%}			
 		{%- endfor -%}
 		</div>
 	{%- endfor -%}
