@@ -72,4 +72,4 @@ collections:
     output: true
   legaldocs:
     output: true
-    permalink: "/legal-documents/:path/:title:output_ext"
+    permalink: "/legal-documents/:path:output_ext"
