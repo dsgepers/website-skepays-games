@@ -67,6 +67,6 @@ collections:
     output: true
     permalink: "/devlogs/:year/:month/:day/:title:output_ext"
   sections:
-    output: true
+    output: false
   games:
     output: true
