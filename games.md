@@ -1,8 +1,8 @@
----
-title: Reading List
-subtitle: a list of books I read
+--
+title: See the games
+subtitle: A list of games I've made
 layout: "page"
-icon: fa-book
+icon: fa-gamepad
 order: 3
 ---
 
