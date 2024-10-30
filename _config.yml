@@ -63,8 +63,10 @@ google_analytics:
 # The following settings are NECESSARY for the Prologue theme to run:
 remote_theme: dsgepers/website-skepays-games
 collections: 
-  sections:
+  posts:
     output: true
     permalink: "/devlogs/:year/:month/:day/:title:output_ext"
+  sections:
+    output: true
   games:
     output: true
