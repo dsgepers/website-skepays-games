@@ -14,7 +14,8 @@ layout: default
 	{%- for col_i in (0..2) -%}
 		<div class="4u 12u$(mobile)">
 		{%- for _post in _posts -%}
-			{%- if forloop.index0 | modulo:3 == col_i -%}
+			{% assign remainder = forloop.index0 | modulo: 3 %}
+			{%- if remainder == col_i -%}
 				{%- include gameblock.html title=_post.title url=_post.url -%}
 			{%- endif -%}			
 		{%- endfor -%}
