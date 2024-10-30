@@ -3,9 +3,14 @@
 	title
 	url
 {%- endcomment -%}
+
+{%- assign _title = include.title | default: 'Untitled' -%}
+{%- assign _url = include.url | default: '#' -%}
+
+
 <div class="item">
-  <a href="#" class="image fit"><img src="{{ 'assets/images/pic02.jpg' | relative_url }}" alt="Ipsum Feugiat" /></a>
+  <a href="{{- _url -}}" class="image fit"><img src="{{ 'assets/images/pic02.jpg' | relative_url }}" alt="{{- _title -}}" /></a>
   <header>
-    <h3>Ipsum Feugiat</h3>
+    <h3>{{- _title -}}</h3>
   </header>
 </div>
