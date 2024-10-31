@@ -3,6 +3,7 @@ layout: default
 ---
 {%- assign _sections = site.sections | where_exp: "section", "section.hide != true" | sort: 'order'  -%}
 {%- include header.html scrolly_nav=_sections -%}
+{%- include nav.html section_type=internal -%}
 <!-- Main -->
 <div id="main">
 	{%- if page.content != "" -%}
