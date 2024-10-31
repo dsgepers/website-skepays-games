@@ -7,7 +7,6 @@
 <nav id="nav">
   <ul>
     {%- assign _pages = site.html_pages | where_exp: "page", "page.hide != true" -%}
-    {%- assign section_type = "external" -%}
     {%- unless _pages == null -%}
       {%- assign _pages = _pages | sort: 'order' -%}
       {%- for _page in _pages -%}
@@ -52,7 +51,7 @@
         {%- else -%}
           {%- assign _class = 'icon' -%}
         {%- endif -%}
-        {%- if section_type == 'external' -%}
+        {%- if include.section_type == 'external' -%}
         <li><a href="{{- _sect.url | absolute_url -}}" id="{{- _slug -}}-link" class="scrolly"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
         {%- else -%}
           <li><a href="#{{- _slug -}}" id="{{- _slug -}}-link" class="scrolly"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
