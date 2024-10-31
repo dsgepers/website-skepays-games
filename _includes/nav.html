@@ -51,10 +51,10 @@
         {%- else -%}
           {%- assign _class = 'icon' -%}
         {%- endif -%}
-        {%- if include.section_type == 'external' -%}
-        <li><a href="{{- _sect.url | absolute_url -}}" id="{{- _slug -}}-link" class="scrolly"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
-        {%- else -%}
+        {%- if include.section_type == 'internal' -%}
           <li><a href="#{{- _slug -}}" id="{{- _slug -}}-link" class="scrolly"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
+        {%- else -%}
+          <li><a href="{{- _sect.url | absolute_url -}}" id="{{- _slug -}}-link" class="scrolly"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
         {%- endif -%}
       {%- endfor -%}
     {%- endunless -%}
